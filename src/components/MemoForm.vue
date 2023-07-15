@@ -1,9 +1,11 @@
 <template>
-  <div><input type="text" v-model="title"></div>
-  <div><textarea v-model="content"></textarea></div>
-  <div class="center">
-    <button @click="save">保存</button>
-    <button @click="remove" v-if="memo.id">削除</button>
+  <div>
+    <div><input type="text" v-model="title"></div>
+    <div><textarea v-model="content"></textarea></div>
+    <div class="center">
+      <button @click="save">保存</button>
+      <button @click="remove" v-if="memo.id">削除</button>
+    </div>
   </div>
 </template>
 
